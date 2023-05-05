@@ -15,7 +15,6 @@ class ApplicationFormTest {
     @Test
     void testFormV1() {
 
-        open("http://localhost:9999");
         $("[data-test-id=name] input").setValue("Хряков Порось");
         $("[data-test-id=phone] input").setValue("+79023004000");
         $("[data-test-id=agreement]").click();
@@ -27,7 +26,6 @@ class ApplicationFormTest {
     @Test
     void testFormV2() {
 
-        open("http://localhost:9999");
         $("[data-test-id=name] input").setValue("Хряков Свин-Порось");
         $("[data-test-id=phone] input").setValue("+79023004000");
         $("[data-test-id=agreement]").click();
@@ -39,7 +37,6 @@ class ApplicationFormTest {
     @Test
     void testFormV3() {
 
-        open("http://localhost:9999");
         $("[data-test-id=name] input").setValue("Хряков Поросёнок");
         $("[data-test-id=phone] input").setValue("+79023004000");
         $("[data-test-id=agreement]").click();
@@ -51,7 +48,6 @@ class ApplicationFormTest {
     @Test
     void testFormV4() {
 
-        open("http://localhost:9999");
         $("[data-test-id=name] input").setValue("Хряков-Кряков Свин Порось");
         $("[data-test-id=phone] input").setValue("+79023004000");
         $("[data-test-id=agreement]").click();
