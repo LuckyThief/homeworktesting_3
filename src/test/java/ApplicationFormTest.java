@@ -13,7 +13,7 @@ class ApplicationFormTest {
     }
 
     @Test
-    void testFormV1() {
+    void shouldSendForm() {
 
         $("[data-test-id=name] input").setValue("Хряков Порось");
         $("[data-test-id=phone] input").setValue("+79023004000");
@@ -24,7 +24,7 @@ class ApplicationFormTest {
     }
 
     @Test
-    void testFormV2() {
+    void shouldSendFormWithDashInName() {
 
         $("[data-test-id=name] input").setValue("Хряков Свин-Порось");
         $("[data-test-id=phone] input").setValue("+79023004000");
@@ -35,7 +35,7 @@ class ApplicationFormTest {
     }
 
     @Test
-    void testFormV3() {
+    void shouldSendFormWithLetterYoInName() {
 
         $("[data-test-id=name] input").setValue("Хряков Поросёнок");
         $("[data-test-id=phone] input").setValue("+79023004000");
@@ -46,7 +46,7 @@ class ApplicationFormTest {
     }
 
     @Test
-    void testFormV4() {
+    void shouldSendFormWithDashAndWhitespaceInName() {
 
         $("[data-test-id=name] input").setValue("Хряков-Кряков Свин Порось");
         $("[data-test-id=phone] input").setValue("+79023004000");
